@@ -23,7 +23,7 @@
 
 ```sh
 # 克隆
-git clone https://github.com/zhukunpenglinyutong/notes.git
+git clone https://github.com/zhaoyuanmeng/notes.git
 
 # 安装依赖
 npm install
@@ -53,6 +53,8 @@ npm run build
 
 - [ ] JavaScript部分
 - [ ] Vue部分
+- [ ] Python部分
+- [ ] 人工智能部分
 
 ---
 
@@ -61,20 +63,8 @@ npm run build
 
 因为入行的时间太短（2019.6 毕业），所以项目会有很多地方不完善。各位前行者，大佬们，如果看出这个项目有的地方可以完善，或者有的地方不好，我拜求各位的指点，我会以很快的速度验证，然后更改的。我会时刻以谦逊姿态请教学习，高调的热情创造宣传，我期待各位大佬们能指出我的不足，我定会虚心请教，牢记恩情。（很多思想不是我不用，是我不知道，所以拜求指教）
 
-**个人微信，拜求指点，不胜感激**
 
-<img style="width:200px;" src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/notes/%E5%85%B6%E4%BB%96/3.png">
-
----
-
-## 👓 内推与招聘
-
-> 最近在找工作的小伙伴可以找我内推，绝对让你满意 [招聘内容地址（掘金沸点）](https://juejin.im/pin/5dce3ed06fb9a027c577ac04)
-
----
 
 ## 💌 致谢
 
-致谢所有 star 和 关注我的 朋友们，多谢你们的鼓励和支持，最近身体状况比较好，所以决定，每天10点半到12点，整理GitHub，所以又可以每日更新了，开心，多谢各位的关注和默默支持。 🦀🦀🦀
-
-后期会在B站直播自己晚上整理笔记的过程（筹备中）
+致谢所有 star 和 关注我的 朋友们，多谢你们的鼓励和支持
