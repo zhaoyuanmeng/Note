@@ -1,4 +1,4 @@
-function integrateGitalk (router) {
+function integrateGitalk(router) {
     const linkGitalk = document.createElement('link');
     linkGitalk.href = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css';
     linkGitalk.rel = 'stylesheet';
@@ -7,7 +7,7 @@ function integrateGitalk (router) {
     scriptGitalk.src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js';
     document.body.appendChild(scriptGitalk);
     var path = '';
-  
+
     router.afterEach((to) => {
         if (scriptGitalk.onload) {
             setTimeout(loadGitalk, 5, to)
@@ -17,8 +17,8 @@ function integrateGitalk (router) {
             }
         }
     });
-  
-    function loadGitalk (to) {
+
+    function loadGitalk(to) {
         if (to.path !== path) {
             path = to.path;
             let commentsContainer = document.getElementById('gitalk-container');
@@ -37,27 +37,28 @@ function integrateGitalk (router) {
             }
         }
     }
-    function renderGitalk () {
+    function renderGitalk() {
         const gitalk = new Gitalk({
-            clientID: 'f0169e672cc67960134b',
-            clientSecret: '63aecc5c696c7f0d19e0b5cf2a5e2417614d220d',
+            //下面的这两个元素是密室 我给改了 所以加载的时候会出现not fund
+            clientID: 'f0169e672cc679601346b',
+            clientSecret: '63aecc5c696c7f0d19e60b5cf2a5e2417614d220d',
             repo: 'notes',
-            owner: 'zhukunpenglinyutong',
-            admin: ['zhukunpenglinyutong'],
+            owner: 'zhaoyuanmeng',
+            admin: ['zhaoyuanmeng'],
             id: decodeURI(window.location.pathname),      // Ensure uniqueness and length less than 50
             createIssueManually: true
         });
         gitalk.render('gitalk-container');
     }
-  
+
     window.loadGitalk = loadGitalk;
-  
-  }
-  
-  export default ({ Vue, options, router }) => {
+
+}
+
+export default ({ Vue, options, router }) => {
     try {
         document && integrateGitalk(router)
     } catch (e) {
         console.error(e.message)
     }
-  }
+}
