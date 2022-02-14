@@ -12,7 +12,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'first'
+git commit -m 'feat: add React'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:zhaoyuanmeng/zhaoyuanmeng.github.io.git master
